@@ -1,0 +1,213 @@
+/*main page layout*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page h1 {
+    font-size: 40pt;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.page h2{
+    font-size: 20pt;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+#mainheading {
+    text-align: center;
+}
+
+#information {
+    padding: 20px;
+    font-size: 12pt;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    padding: 0.01em 0px;
+    align-content: center;
+    margin: 0;
+    position: relative;
+}
+
+.container:after,
+.container:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.light-blue,
+.hover-light-blue:hover {
+    color: #000!important;
+    background-color: #87CEEB!important
+}
+
+.light-grey,
+.hover-light-grey:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important
+}
+
+.collapsible {
+    background-color: #a1d0e2;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #34738c;
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: lightblue;
+}
+
+.content {
+    padding: 0 18px;
+    background-color: #f1f4f7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.content p{
+    font-size: 12pt;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+/*sidebar*/
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 12pt;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.page {
+    margin-left: 200px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.page {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+        padding: 5px;
+    }
+}
+/**/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* GRAPH CSS */
+
+.graph-canvas{
+    width:100%; 
+    height:100%;
+}
+
+#stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chart-container-small {
+    width: 400px;
+    height: 400px;
+}
+
+.chart-container-wideL {
+    width: 90vw;
+    height: 500px;
+}
+
+#chart2-ewastedevices{
+    width:100%;
+    height:100%;
+
+}
+
+/* END OF GRAPH CSS */
+
+
+
+/* SLIDESHOW CSS */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/* END OF SLIDESHOW CSS */
